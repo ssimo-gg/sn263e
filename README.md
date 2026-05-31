@@ -57,8 +57,5 @@ portfolio-v1/
 - `aria-pressed` su bottoni filtro
 - `role="progressbar"` con `aria-valuenow/min/max` sulle skill bar
 - `aria-busy` sul submit durante loading
-<<<<<<< HEAD
 
 ---
-=======
->>>>>>> a044b4dbace249e2d56f09214e67845fb974059a
