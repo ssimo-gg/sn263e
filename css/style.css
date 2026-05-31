@@ -112,10 +112,10 @@ h1, h2, h3, h4 {
     letter-spacing: -0.02em;
 }
 
-h1 { font-family: var(--display); font-size: clamp(3rem, 2rem + 2.5vw, 5rem); font-weight: 800; }
-h2 { font-family: var(--display); font-size: clamp(1.10rem, 1.20rem + 1.30vw, 2.35rem); font-weight: 800; }
-h3 { font-family: var(--display); font-size: clamp(1.05rem, 1.1rem + 1.15vw, 2rem); font-weight: 600; }
-h4 { font-family: var(--display); font-size: clamp(0.95rem, 1rem + 0.65vw, 1.25rem); font-weight: 500; }
+h1 { font-family: var(--display); font-size: clamp(2.75rem, 1.8rem + 2.2vw, 5rem); font-weight: 800; }
+h2 { font-family: var(--display); font-size: clamp(1.3rem, 1rem + 1.20vw, 2.2rem); font-weight: 800; }
+h3 { font-family: var(--display); font-size: clamp(1.15rem, 1.1rem + 1vw, 1.85rem); font-weight: 600; }
+h4 { font-family: var(--display); font-size: clamp(1rem, 1rem + 0.65vw, 1.25rem); font-weight: 500; }
 
 p   { margin: 0; max-width: 72ch; cursor: text; }
 a   { display: flex; justify-content: center; align-items: center; color: inherit; text-decoration: none; }
@@ -1328,7 +1328,10 @@ a.cg__detail-value:hover { color: var(--accent-main); }
 }
 
 @media (max-width: 900px) {
-    .cg { grid-template-columns: 1fr; }
+    .cg { 
+        grid-template-columns: 1fr; 
+        gap: var(--space-md); 
+    }
     .cg__text { max-width: unset; }
 }
 
