@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simone Nalli | Contatti</title>
+    <meta name="description" content="Simone Nalli | Atleta e Developer — Studente, Arciere, Web Developer">
+    <link rel="icon" type="image/svg+xml" href="assets/svgs/portfolio-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&family=Syne+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ── NAVBAR ───────────────────────────────────────────────────── -->
+    <nav class="navbar" aria-label="Navigazione principale">
+        <div class="container navbar__inner flex jc-between ai-center w-full h-full">
+            <a href="index.html" class="navbar__logo" aria-label="Home — Simone Nalli">
+                <img src="assets/svgs/portfolio-logo.svg" alt="Logo Simone Nalli">
+            </a>
+
+            <button id="nav-toggle" class="navbar__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Apri menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <line x1="3" y1="6"  x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <ul id="nav-menu" class="navbar__menu flex gap-lg" role="list">
+                <li><a href="index.html"    class="navbar__link">Home</a></li>
+                <li><a href="portfolio.html" class="navbar__link">Portfolio</a></li>
+                <li><a href="contacts.html"  class="navbar__link" aria-current="page">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── HERO ─────────────────────────────────────────────────────── -->
+    <header class="hero">
+        <div class="container hero__inner flex-col jc-center gap-xs">
+            <h1 class="hero__title">Contatti<span class="text-accent">.</span></h1>
+            <div class="hero__subtitle">Contatti Personali — Social — Richieste</div>
+        </div>
+    </header>
+
+    <!-- ── MAIN ─────────────────────────────────────────────────────── -->
+    <main id="main-content" class="page">
+        <div class="container page__inner flex-col gap-3xl">
+
+            <!-- Form + Info ──────────────────────────────────────────── -->
+            <section id="contact-form" aria-labelledby="contact-form-heading">
+                <div class="sec__body">
+                    <div class="cg">
+
+                        <!-- Info colonna -->
+                        <div class="cg__info flex-col gap-xl">
+                            <h2 id="contact-form-heading" class="sec__title">
+                                Hai un progetto?<br>
+                                <span class="text-accent">Parliamone.</span>
+                            </h2>
+                            <p class="cg__text">
+                                Sono sempre aperto a nuove collaborazioni — scolastiche o personali.
+                                Compila il modulo o scrivimi direttamente: rispondo entro 24 ore.
+                            </p>
+
+                            <ul class="cg__details" role="list">
+
+                                <li class="cg__detail-item">
+                                    <div class="cg__detail-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="cg__detail-label">Email</p>
+                                        <a href="mailto:simone.nalli.1029@gmail.com" class="cg__detail-value">simone.nalli.1029@gmail.com</a>
+                                    </div>
+                                </li>
+
+                                <li class="cg__detail-item">
+                                    <div class="cg__detail-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="cg__detail-label">Posizione</p>
+                                        <p class="cg__detail-value">Oristano, Sardegna</p>
+                                    </div>
+                                </li>
+
+                                <li class="cg__detail-item">
+                                    <div class="cg__detail-icon" aria-hidden="true">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="cg__detail-label">Disponibilità</p>
+                                        <p class="cg__detail-value" style="color: var(--accent-main);">Aperto a nuovi progetti</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!-- Form colonna -->
+                        <div class="card cg__form-card">
+                            <div class="card__body">
+                                <form class="cg__form" id="cg-form" aria-label="Modulo di contatto"
+                                      action="https://formspree.io/f/maqkzqnz" method="POST">
+                                    <div class="cg__form-row">
+                                        <div class="cg__form-group">
+                                            <label for="cf-name" class="cg__form-label">Nome *</label>
+                                            <input
+                                                type="text" id="cf-name" name="Nome"
+                                                class="cg__form-input"
+                                                placeholder="Il tuo nome"
+                                                required autocomplete="Nome"
+                                            />
+                                        </div>
+                                        <div class="cg__form-group">
+                                            <label for="cf-surname" class="cg__form-label">Cognome *</label>
+                                            <input
+                                                type="text" id="cf-surname" name="Cognome"
+                                                class="cg__form-input"
+                                                placeholder="Il tuo cognome"
+                                                required autocomplete="Cognome"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="cg__form-group">
+                                        <label for="cf-email" class="cg__form-label">Email *</label>
+                                        <input
+                                            type="email" id="cf-email" name="E-Mail"
+                                            class="cg__form-input"
+                                            placeholder="tua@email.com"
+                                            required autocomplete="E-Mail"
+                                        />
+                                    </div>
+                                    <div class="cg__form-group">
+                                        <label for="cf-message" class="cg__form-label">Messaggio *</label>
+                                        <textarea
+                                            id="cf-message" name="Messaggio"
+                                            class="cg__form-textarea"
+                                            placeholder="Raccontami del tuo progetto — cosa stai costruendo, quale problema risolve?"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn--primary" aria-label="Invia messaggio">
+                                        <span class="btn__label">INVIA MESSAGGIO</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                            <line x1="22" y1="2" x2="11" y2="13"/>
+                                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Social Cards ─────────────────────────────────────────── -->
+            <section id="contacts" aria-labelledby="contacts-heading">
+                <header class="sec__heading">
+                    <span class="sec__label">Contatti</span>
+                    <h2 id="contacts-heading" class="sec__title">In campo, in ufficio, <span class="text-accent">online</span>.</h2>
+                </header>
+
+                <div class="sec__body sec__contacts--grid">
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/ssimo-gg"
+                       class="card contact-card"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Apri il profilo GitHub di Simone Nalli">
+                        <div class="card__visual card__visual--contact">
+                            <div class="card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </div>
+                        </div>
+                        <div class="card__body card__body--contact">
+                            <span class="contact-card__platform">GitHub</span>
+                            <span class="contact-card__handle">ssimo-gg</span>
+                            <div class="contact-card__arrow" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/simone.nallii"
+                       class="card contact-card"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Apri il profilo Instagram di Simone Nalli">
+                        <div class="card__visual card__visual--contact">
+                            <div class="card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                        </div>
+                        <div class="card__body card__body--contact">
+                            <span class="contact-card__platform">Instagram</span>
+                            <span class="contact-card__handle">@simone.nallii</span>
+                            <div class="contact-card__arrow" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com/@simo.nalli"
+                       class="card contact-card"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Apri il profilo TikTok di Simone Nalli">
+                        <div class="card__visual card__visual--contact">
+                            <div class="card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                            </div>
+                        </div>
+                        <div class="card__body card__body--contact">
+                            <span class="contact-card__platform">TikTok</span>
+                            <span class="contact-card__handle">@simo.nalli</span>
+                            <div class="contact-card__arrow" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1Cmnbjqswg/?mibextid=wwXIfr"
+                       class="card contact-card"
+                       target="_blank" rel="noopener noreferrer"
+                       aria-label="Apri il profilo Facebook di Simone Nalli">
+                        <div class="card__visual card__visual--contact">
+                            <div class="card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </div>
+                        </div>
+                        <div class="card__body card__body--contact">
+                            <span class="contact-card__platform">Facebook</span>
+                            <span class="contact-card__handle">Simone Nalli</span>
+                            <div class="contact-card__arrow" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- E-Mail -->
+                    <!-- <a href="mailto:simone.nalli.1029@gmail.com"
+                       class="card contact-card"
+                       aria-label="Invia un'email a Simone Nalli">
+                        <div class="card__visual card__visual--contact">
+                            <div class="card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                        </div>
+                        <div class="card__body card__body--contact">
+                            <span class="contact-card__platform">E-Mail</span>
+                            <span class="contact-card__handle">simone.nalli.1029</span>
+                            <div class="contact-card__arrow" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+                            </div>
+                        </div>
+                    </a> -->
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ── FORM SUCCESS OVERLAY ──────────────────────────────────────── -->
+    <div class="form-overlay flex jc-center ai-center" id="form-overlay" 
+        role="dialog" aria-modal="true" aria-labelledby="overlay-title" aria-hidden="true">
+        <div class="card form-card">
+            <div class="card__visual py-lg" aria-hidden="true">
+                <div class="card__icon card__icon--form">
+                    <img src="assets/svgs/portfolio-logo.svg" alt="portfolio-logo">
+                </div>
+            </div>
+            <div class="card__body text-center">
+                <h2 class="card__title" id="overlay-title">Messaggio <span class="text-accent">inviato</span>.</h2>
+                <p class="card__text text-md">
+                    Ti risponderò entro 24 ore. Nel frattempo dai un'occhiata al mio lavoro.
+                </p>
+                <div class="form-overlay__actions">
+                    <a href="portfolio.html" class="btn btn--primary">
+                        Visualizza Portfolio
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <button class="btn btn--ghost" id="overlay-close" aria-label="Chiudi notifica e torna alla pagina">
+                        Torna alla Pagina
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button class="back-to-top" type="button" aria-label="Torna su">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5" />
+            <path d="M5 12l7-7 7 7" />
+        </svg>
+    </button>
+    
+    <!-- ── FOOTER ────────────────────────────────────────────────────── -->
+    <footer class="footer surface-0">
+        <div class="container footer__inner flex jc-between ai-center">
+            <a href="index.html" class="footer__brand">
+                simone<span class="text-accent">nalli</span>.
+            </a>
+            <div class="footer__tagline">&copy; 2026 Simone Nalli — Precision is a habitat.</div>
+            <div class="footer__social flex ai-center gap-xs" aria-label="Link di contatto">
+                <a href="https://github.com/ssimo-gg" class="footer__contact" aria-label="GitHub di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://www.instagram.com/simone.nallii" class="footer__contact" aria-label="Instagram di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@simo.nalli" class="footer__contact" aria-label="TikTok di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1Cmnbjqswg/?mibextid=wwXIfr" class="footer__contact" aria-label="Facebook di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="contacts.html" class="footer__contact" aria-label="Email a Simone Nalli">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+
+</body>
+</html>

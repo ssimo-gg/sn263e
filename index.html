@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simone Nalli</title>
+    <meta name="description" content="Simone Nalli | Atleta e Developer — Studente, Arciere, Web Developer">
+    <link rel="icon" type="image/svg+xml" href="assets/svgs/portfolio-logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&family=Syne+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ── NAVBAR ───────────────────────────────────────────────────── -->
+    <nav class="navbar" aria-label="Navigazione principale">
+        <div class="container navbar__inner flex jc-between ai-center w-full h-full">
+            <a href="index.html" class="navbar__logo" aria-label="Home — Simone Nalli">
+                <img src="assets/svgs/portfolio-logo.svg" alt="Logo Simone Nalli">
+            </a>
+
+            <button id="nav-toggle" class="navbar__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Apri menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <line x1="3" y1="6"  x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <ul id="nav-menu" class="navbar__menu flex gap-lg" role="list">
+                <li><a href="index.html"    class="navbar__link" aria-current="page">Home</a></li>
+                <li><a href="portfolio.html" class="navbar__link">Portfolio</a></li>
+                <li><a href="contacts.html"  class="navbar__link">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ── HERO ─────────────────────────────────────────────────────── -->
+    <header class="hero">
+        <div class="container hero__inner flex-col jc-center gap-xs">
+            <h1 class="hero__title">Simone <span class="text-accent">Nalli</span></h1>
+            <div class="hero__subtitle">Studente — Arciere — Web Developer</div>
+        </div>
+    </header>
+
+    <!-- ── MAIN ─────────────────────────────────────────────────────── -->
+    <main id="main-content" class="page">
+        <div class="container page__inner flex-col gap-3xl">
+            <div class="page__columns">
+
+                <div class="page__feed flex-col gap-3xl">
+
+                    <!-- 01 / CHI SONO ─────────────────────────────── -->
+                    <section id="about" aria-labelledby="about-heading">
+                        <header class="sec__heading">
+                            <span class="sec__label">Chi sono</span>
+                            <h2 id="about-heading" class="sec__title">
+                                Preciso per <span class="text-accent">natura</span>,
+                                <br>curioso per <span class="text-accent">scelta</span>.
+                            </h2>
+                        </header>
+                        <div class="sec__body">
+                            <div class="sec__text">
+                                <p>Sono Simone, uno studente appassionato di informatica e pratico Tiro con l'Arco a livello agonistico nazionale. Tra linee di codice e linee di tiro cerco solo una cosa — <strong>la massima precisione</strong>.</p>
+                                <p>Ho 16 anni, frequento la 3ª superiore all'ITIS Othoca di Oristano e sto affinando le mie competenze tecniche per farne il mio <strong>futuro</strong>.</p>
+                                <p>La disciplina della linea di tiro è la stessa che porto sulla tastiera: analisi, fermezza e un <strong>costante miglioramento</strong>. Non mi interessa solo che un programma funzioni — voglio che sia perfetto.</p>
+                            </div>
+                            <div class="sec__tags flex-wrap gap-sm">
+                                <span class="tag tag--info">16 Anni</span>
+                                <span class="tag tag--info">Oristano</span>
+                                <span class="tag tag--info">ITIS Othoca</span>
+                                <span class="tag tag--info">UX / UI Design</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 02 / PERCORSO ────────────────────────────── -->
+                    <section id="percorso" aria-labelledby="percorso-heading">
+                        <header class="sec__heading">
+                            <span class="sec__label">Percorso</span>
+                            <h2 id="percorso-heading" class="sec__title">
+                                Ogni traguardo,
+                                <br><span class="text-accent">una freccia</span>.
+                            </h2>
+                        </header>
+                        <div class="sec__body">
+                            <ol class="timeline" role="list">
+                                <li class="timeline__item">
+                                    <time class="timeline__date" datetime="2024">2023</time>
+                                    <div class="timeline__content">
+                                        <h3 class="timeline__title">Qualificazione Campionati Nazionali — Tiro con l'Arco</h3>
+                                        <p class="timeline__text">Risultato agonistico di punta: accesso ai campionati nazionali giovanili. La disciplina dello sport trasferita nel metodo di lavoro quotidiano.</p>
+                                    </div>
+                                </li>
+                                <li class="timeline__item">
+                                    <time class="timeline__date" datetime="2022">2023</time>
+                                    <div class="timeline__content">
+                                        <h3 class="timeline__title">Inizio ITIS Othoca</h3>
+                                        <p class="timeline__text">Avvio del percorso tecnico in Informatica e Telecomunicazioni. Prime basi solide di C++, reti e logica computazionale.</p>
+                                    </div>
+                                </li>
+                                <li class="timeline__item">
+                                    <time class="timeline__date" datetime="2025">2026</time>
+                                    <div class="timeline__content">
+                                        <h3 class="timeline__title">Portfolio V1 — Questo sito</h3>
+                                        <p class="timeline__text">Architettura custom, CSS system design, JavaScript modulare. Il progetto che consolida tutto quanto appreso fino a qui.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
+                </div><!-- /page__feed -->
+
+                <!-- Aside destro -->
+                <aside class="page__panel" aria-label="Profilo e competenze">
+
+                    <!-- Profile Card -->
+                    <div class="card profile-card relative">
+                        <div class="profile-card__banner absolute w-full" aria-hidden="true"></div>
+                        <div class="card__body">
+                            <div class="profile-card__top flex ai-center gap-xl">
+                                <div class="profile-card__avatar flex jc-center ai-center br-full text-xl" aria-label="Avatar di Simone Nalli">SN</div>
+                                <a href="portfolio.html" class="profile-card__button btn btn--primary" aria-label="Vai al Portfolio">
+                                    Portfolio
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </a>
+                            </div>
+                            <div class="flex-col ai-start gap-xs">
+                                <h3 class="card__title text-lg">Simone Nalli</h3>
+                                <p class="profile-card__role text-sm">Studente di 16 anni di Informatica e Arciere agonistico.</p>
+                            </div>
+                            <div class="profile-card__details flex-wrap gap-lg text-muted text-sm">
+                                <div class="flex ai-center gap-xs">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                    <span>Oristano</span>
+                                </div>
+                                <div class="flex ai-center gap-xs">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                                    <span>ITIS Othoca</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Tracker -->
+                    <div class="card skill-card">
+                        <div class="card__body">
+                            <span class="card__label">TECH SKILLS</span>
+                            <ul class="skill-card__list flex-col gap-sm" role="list">
+                                <li class="skill-card__item">
+                                    <div class="flex jc-between ai-center">
+                                        <span class="skill-card__pill">HTML / CSS</span>
+                                        <span class="skill-card__percentage">87%</span>
+                                    </div>
+                                    <div class="skill-card__track" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="HTML / CSS — 87%">
+                                        <div class="skill-card__fill h-full" style="width: 87%"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card__item">
+                                    <div class="flex jc-between ai-center">
+                                        <span class="skill-card__pill">C++</span>
+                                        <span class="skill-card__percentage">40%</span>
+                                    </div>
+                                    <div class="skill-card__track" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="C++ — 40%">
+                                        <div class="skill-card__fill h-full" style="width: 40%"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card__item">
+                                    <div class="flex jc-between ai-center">
+                                        <span class="skill-card__pill">Python</span>
+                                        <span class="skill-card__percentage">28%</span>
+                                    </div>
+                                    <div class="skill-card__track" role="progressbar" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100" aria-label="Python — 28%">
+                                        <div class="skill-card__fill h-full" style="width: 28%"></div>
+                                    </div>
+                                </li>
+                                <li class="skill-card__item">
+                                    <div class="flex jc-between ai-center">
+                                        <span class="skill-card__pill">JavaScript</span>
+                                        <span class="skill-card__percentage">18%</span>
+                                    </div>
+                                    <div class="skill-card__track" role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript — 18%">
+                                        <div class="skill-card__fill h-full" style="width: 18%"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </aside>
+
+            </div><!-- /page__columns -->
+
+            <!-- 04 / PROGETTI ──────────────────────── -->
+            <section id="progetti-preview" aria-labelledby="progetti-heading">
+                <header class="sec__heading">
+                    <span class="sec__label">Portfolio</span>
+                    <h2 class="sec__title" id="progetti-heading">I miei progetti <span class="text-accent">migliori</span>.</h2>
+                </header>
+                <div class="sec__body">
+                    <div class="sec__body sec__portfolio--grid">
+
+                        <article id="portfolio-v1"
+                                 class="card project-card"
+                                 aria-label="Progetto: Portfolio V1">
+                            <div class="card__visual card__visual--project">
+                                PV1
+                            </div>
+                            <div class="card__body">
+                                <div class="card__label">2026 · WEB DESIGN</div>
+                                <h3 class="card__title">Portfolio V1 — Web Personal Space</h3>
+                                <p class="card__text">Architettura personalizzata e design minimale. Un esperimento di precisione tecnica. Progettato per dimostrare le mie capacità in ambito Web Design dopo il primo anno di studio.</p>
+                                <div class="card__stack">
+                                    <span class="tag tag--accent">IDENTITY</span>
+                                    <span class="tag">UI/UX DESIGN</span>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a class="card__link" href="portfolio.html#portfolio-v1">
+                                    VEDI PORTFOLIO
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </footer>
+                        </article>
+
+                        <article id="js-project"
+                                 class="card project-card"
+                                 aria-label="Progetto: Progetto JS">
+                            <div class="card__visual card__visual--project">
+                                PJS
+                            </div>
+                            <div class="card__body">
+                                <div class="card__label">2026 · WEB APP</div>
+                                <h3 class="card__title">Progetto — WebApp JavaScript</h3>
+                                <p class="card__text">Esperimento di sviluppo focalizzato sulla logica computazionale in JavaScript. Un banco di prova per testare algoritmi di ordinamento e interazioni utente avanzate.</p>
+                                <div class="card__stack">
+                                    <span class="tag tag--accent">DEVELOPMENT</span>
+                                    <span class="tag">ONLINE COURSE</span>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a class="card__link" href="portfolio.html#js-project">
+                                    VEDI PORTFOLIO
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </footer>
+                        </article>
+    
+                        <article id="classe3"
+                                 class="card project-card"
+                                 aria-label="Progetto: ClassE3">
+                            <div class="card__visual card__visual--project">
+                                CE3
+                            </div>
+                            <div class="card__body">
+                                <div class="card__label">2026 · WEB DESIGN</div>
+                                <h3 class="card__title">ClassE3 — Identità Digitale Collettiva</h3>
+                                <p class="card__text">Sito vetrina realizzato per sperimentare layout responsive e animazioni CSS, prendendo come soggetto la realtà scolastica della mia classe.</p>
+                                <div class="card__stack">
+                                    <span class="tag tag--accent">TEAM WORK</span>
+                                    <span class="tag">HTML5 SEMANTICO</span>
+                                </div>
+                            </div>
+                            <footer class="card__footer">
+                                <a class="card__link" href="portfolio.html#classe3">
+                                    VEDI PORTFOLIO
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </footer>
+                        </article>
+                    </div>
+
+                    <div class="portfolio-meta">
+                        <div class="portfolio-meta__count">Visualizzati <b>3</b> di <b>4</b> progetti</div>
+                        <a href="portfolio.html" class="sec__cta flex ai-center" aria-label="Vai a tutti i progetti">
+                            Guarda l'archivio completo
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 8L22 12L18 16"/><path d="M2 12H22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <button class="back-to-top" type="button" aria-label="Torna su">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 19V5" />
+            <path d="M5 12l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- ── FOOTER ────────────────────────────────────────────────────── -->
+    <footer class="footer surface-0">
+        <div class="container footer__inner flex jc-between ai-center">
+            <a href="index.html" class="footer__brand">
+                simone<span class="text-accent">nalli</span>.
+            </a>
+            <div class="footer__tagline">&copy; 2026 Simone Nalli — Precision is a habitat.</div>
+            <div class="footer__social flex ai-center gap-xs" aria-label="Link di contatto">
+                <a href="https://github.com/ssimo-gg" class="footer__contact" aria-label="GitHub di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://www.instagram.com/simone.nallii" class="footer__contact" aria-label="Instagram di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@simo.nalli" class="footer__contact" aria-label="TikTok di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1Cmnbjqswg/?mibextid=wwXIfr" class="footer__contact" aria-label="Facebook di Simone Nalli" target="_blank" rel="noopener noreferrer">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="contacts.html" class="footer__contact" aria-label="Email a Simone Nalli">
+                    <svg class="footer__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
